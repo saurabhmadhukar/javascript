@@ -17,7 +17,7 @@ try {
     const response=await fetch(apiURL, optionData);
     const data=await response.json();
     btnE1.innerText="Tell me a joke";
-    console.log(data[0].joke);
+    // console.log(data[0].joke);
     jokeE1.innerText=data[0].joke;
    btnE1.disabled=false;
 } catch (error) {
@@ -41,3 +41,4 @@ try {
 
 
 btnE1.addEventListener("click",joke);
+
